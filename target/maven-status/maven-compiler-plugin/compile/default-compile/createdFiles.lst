@@ -1,0 +1,7 @@
+com\internship\meetingsmanagement\servlet\UsersServlet.class
+com\internship\meetingsmanagement\classes\UserDao.class
+com\internship\meetingsmanagement\classes\Main.class
+com\internship\meetingsmanagement\servlet\WelcomeServlet.class
+com\internship\meetingsmanagement\classes\User.class
+com\internship\meetingsmanagement\classes\Participant.class
+com\internship\meetingsmanagement\classes\Meeting.class
