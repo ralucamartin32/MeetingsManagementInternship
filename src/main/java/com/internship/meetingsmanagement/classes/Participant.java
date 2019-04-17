@@ -11,8 +11,8 @@ import lombok.Setter;
 @Setter
 public class Participant {
 
-    private Integer id;
-    private Integer idMeeting;
-    private Integer idUuser;
+
+    private Long idMeeting;
+    private Long idUuser;
 
 }

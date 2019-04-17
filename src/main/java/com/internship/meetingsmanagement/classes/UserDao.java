@@ -17,8 +17,8 @@ public class UserDao {
 //    User user10 = new User(10, "Maria", "Mihet");
     public List<User> getUsers() {
         List<User> users = new ArrayList<>();
-        users.add(new User(1, "Raluca", "Martin"));
-        users.add(new User(2, "Luiza", "Anghel"));
+        users.add(new User(1L, "Raluca", "Martin"));
+        users.add(new User(2L, "Luiza", "Anghel"));
 
         return users;
     }

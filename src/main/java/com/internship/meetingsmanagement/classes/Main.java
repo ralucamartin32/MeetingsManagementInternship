@@ -6,16 +6,16 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
 
-        User user1 = new User(1, "Raluca", "Martin");
-        User user2 = new User(2, "Luiza", "Anghel");
-        User user3 = new User(3, "Laura", "Budai");
-        User user4 = new User(4, "Raluca", "Prunean");
-        User user5 = new User(5, "Eduard", "Hantig");
-        User user6 = new User(6, "Petrica", "Timis");
-        User user7 = new User(7, "Ioana", "Mihet");
-        User user8 = new User(8, "Dorin", "Cret");
-        User user9 = new User(9, "Mircea", "Mihet");
-        User user10 = new User(10, "Maria", "Mihet");
+        User user1 = new User(1L, "Raluca", "Martin");
+        User user2 = new User(2L, "Luiza", "Anghel");
+        User user3 = new User(3L, "Laura", "Budai");
+        User user4 = new User(4L, "Raluca", "Prunean");
+        User user5 = new User(5L, "Eduard", "Hantig");
+        User user6 = new User(6L, "Petrica", "Timis");
+        User user7 = new User(7L, "Ioana", "Mihet");
+        User user8 = new User(8L, "Dorin", "Cret");
+        User user9 = new User(9L, "Mircea", "Mihet");
+        User user10 = new User(10L, "Maria", "Mihet");
 
         List<User> userList = new ArrayList<>();
         userList.add(user1);

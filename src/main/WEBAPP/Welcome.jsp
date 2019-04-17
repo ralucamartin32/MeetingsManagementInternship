@@ -24,6 +24,11 @@
     <input type="submit" value="Submit">
 </form>
 
+<form action="meetingslist" method="get">
+    View All Meetings
+    <input type="submit" value="Submit">
+</form>
+
 
 </body>
 </html>

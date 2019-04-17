@@ -4,6 +4,8 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+
+import java.time.LocalDateTime;
 import java.util.Date;
 
 @NoArgsConstructor
@@ -12,8 +14,8 @@ import java.util.Date;
 @Setter
 public class Meeting {
 
-    private Integer id;
-    private Date date;
+    private Long id;
+    private LocalDateTime date;
     private String title;
     private String location;
 
