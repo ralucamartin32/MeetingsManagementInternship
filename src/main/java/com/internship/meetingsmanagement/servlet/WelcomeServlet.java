@@ -9,10 +9,11 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 @WebServlet("/welcome")
 public class WelcomeServlet extends HttpServlet {
+
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-        RequestDispatcher dispatcher = req.getRequestDispatcher("Welcome.jsp");
+        RequestDispatcher dispatcher = req.getRequestDispatcher("welcome.jsp");
         dispatcher.forward(req, resp);
     }
 }

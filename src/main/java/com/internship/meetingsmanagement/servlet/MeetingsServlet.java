@@ -1,9 +1,7 @@
 package com.internship.meetingsmanagement.servlet;
 
-import com.internship.meetingsmanagement.classes.Meeting;
-import com.internship.meetingsmanagement.classes.MeetingManager;
-import com.internship.meetingsmanagement.classes.User;
-import com.internship.meetingsmanagement.classes.UserManager;
+import com.internship.meetingsmanagement.domain.Meeting;
+import com.internship.meetingsmanagement.manager.MeetingManager;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -16,12 +14,13 @@ import java.util.List;
 
 @WebServlet("/meetingslist")
 public class MeetingsServlet extends HttpServlet {
+
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         try {
 
-            MeetingManager.setMeetings();
-            List<Meeting> meetings = MeetingManager.getMeetings();
+            MeetingManager meetingManager = new MeetingManager();
+            List<Meeting> meetings = meetingManager.getMeetings();
 
             RequestDispatcher dispatcher;
             if(!meetings.isEmpty()) {

@@ -1,4 +1,4 @@
-<%@ page import="com.internship.meetingsmanagement.classes.Meeting" %>
+<%@ page import="com.internship.meetingsmanagement.domain.Meeting" %>
 <%@ page import="java.util.ArrayList" %><%--
   Created by IntelliJ IDEA.
   User: raluca.martin
@@ -18,7 +18,10 @@
     </style>
 </head>
 <body>
+<form action="/JSP/meetingslist" method="post">
 
+
+</form>
 <table border="1">
     <tr>
         <th>Meeting Id</th>
@@ -40,6 +43,11 @@
     </tr>
     <%}%>
 </table>
+
+<form action="editmeeting" method="get">
+    Edit a meeting
+    <input type="submit" value="Submit">
+</form>
 
 </body>
 </html>

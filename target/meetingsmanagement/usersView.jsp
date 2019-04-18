@@ -1,4 +1,4 @@
-<%@ page import="com.internship.meetingsmanagement.classes.User" %><%--
+<%@ page import="com.internship.meetingsmanagement.domain.User" %><%--
   Created by IntelliJ IDEA.
   User: raluca.martin
   Date: 4/17/2019
