@@ -13,6 +13,6 @@ public class Participant {
 
 
     private Long idMeeting;
-    private Long idUuser;
+    private Long idUser;
 
 }

@@ -18,16 +18,14 @@
     </style>
 </head>
 <body>
-<form action="/JSP/meetingslist" method="post">
 
-
-</form>
 <table border="1">
     <tr>
         <th>Meeting Id</th>
         <th>Date</th>
         <th>Title</th>
         <th>Location</th>
+        <th>Edit a meeting</th>
     </tr>
     <%
         ArrayList<Meeting> meetings =
@@ -40,14 +38,11 @@
         <td><%=m.getDate()%></td>
         <td><%=m.getTitle()%></td>
         <td><%=m.getLocation()%></td>
+        <td><a href="editmeeting?value=<%=m.getId()%>">EDIT</a></td>
     </tr>
     <%}%>
 </table>
 
-<form action="editmeeting" method="get">
-    Edit a meeting
-    <input type="submit" value="Submit">
-</form>
 
 </body>
 </html>

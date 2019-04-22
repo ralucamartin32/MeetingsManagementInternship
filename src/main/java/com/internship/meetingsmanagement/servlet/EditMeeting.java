@@ -21,64 +21,54 @@ import java.util.List;
 @WebServlet("/editmeeting")
 public class EditMeeting extends HttpServlet {
 
-    MeetingManager meetingManager = new MeetingManager();
-    UserManager userManager = new UserManager();
-    ParticipantManager participantManager = new ParticipantManager();
+    private MeetingManager meetingManager = new MeetingManager();
+    private UserManager userManager = new UserManager();
+    private ParticipantManager participantManager = new ParticipantManager();
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        List<Meeting> meetings = meetingManager.getMeetings();
+
+        Long meetingId = Long.valueOf(req.getParameter("value"));
+        List<Meeting> meetings = meetingManager.getMeetingList();
+
+        if (!meetingId.equals(0L)) {
+            req.setAttribute("meetingId", meetingId);
+            req.setAttribute("date", meetingManager.getMeetingById(meetingId).getDate());
+            System.out.println(meetingManager.getMeetingById(meetingId).getDate());
+            req.setAttribute("title", meetingManager.getMeetingById(meetingId).getTitle());
+            req.setAttribute("location", meetingManager.getMeetingById(meetingId).getLocation());
+//            RequestDispatcher dispatcher = req.getRequestDispatcher("editMeetingsView.jsp");
+//            dispatcher.forward(req, resp);
+        }
+
         List<User> users = userManager.getUserList();
         List<Participant> participants = participantManager.getParticipantList();
 
-        List<Long> listM = new ArrayList<>();
-        for (Meeting m: meetings) {
-            listM.add(m.getId());
-        }
-
-        List<Long> listU = new ArrayList<>();
-        for (User u: users){
-            listU.add(u.getId());
-        }
-
-        List<Long> listPM = new ArrayList<>();
-        for (Participant p: participants) {
-            listPM.add(p.getIdMeeting());
-        }
-
-        List<Long> listPU = new ArrayList<>();
-        for (Participant p: participants) {
-            listPU.add(p.getIdUuser());
-        }
-
-        listPM.retainAll(listM);
-        listPU.retainAll(listU);
-
-        List<Meeting> sortedMeetings = new ArrayList<>();
-        List<User> sortedUsers = new ArrayList<>();
-        for(Meeting m : meetings)
-            for (Long l : listPM) {
-                if (m.getId().equals(l)) {
-                    sortedMeetings.add(m);
-                }
-            }
-
-        for(User u : users)
-            for (Long l : listPU) {
-                if (u.getId().equals(l)) {
-                    sortedUsers.add(u);
-                }
-            }
-
-
-
-        if (!CollectionUtils.isEmpty(sortedMeetings) && !CollectionUtils.isEmpty(sortedUsers)) {
-
-            req.setAttribute("users", sortedUsers);
-            req.setAttribute("meetings", sortedMeetings);
+        if (!CollectionUtils.isEmpty(users) && !CollectionUtils.isEmpty(participants) ) {
+            req.setAttribute("users", users);
             req.setAttribute("participants", participants);
-            RequestDispatcher dispatcher = req.getRequestDispatcher("editMeetingsView.jsp");
-            dispatcher.forward(req, resp);
+
         }
+        RequestDispatcher dispatcher = req.getRequestDispatcher("editMeetingsView.jsp");
+        dispatcher.forward(req, resp);
     }
+
+
+    @Override
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        List<Participant> participants = participantManager.getParticipantList();
+
+        Long meetingId = Long.valueOf(req.getParameter("id"));
+        String[] select =  req.getParameterValues("check");
+        if(select != null) {
+            for(int i = 0; i < select.length; i++){
+                if(!participantManager.containsUser(Long.valueOf(select[i]))) {
+                    Participant participant = new Participant(meetingId, Long.valueOf(select[i]));
+                    participantManager.addParticipant(participant);
+                }
+            }
+        }
+        resp.sendRedirect("welcome.jsp");
+    }
+
 }

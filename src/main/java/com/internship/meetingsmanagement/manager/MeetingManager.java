@@ -30,7 +30,12 @@ public class MeetingManager {
 
     }
 
-    public static List<Meeting> getMeetings() {
-        return meetings;
+    public Meeting getMeetingById(Long id){
+
+        for (Meeting m : meetings) {
+            if(m.getId().equals(id))
+                return m;
+        }
+        return  null;
     }
 }

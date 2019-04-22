@@ -20,7 +20,7 @@ public class MeetingsServlet extends HttpServlet {
         try {
 
             MeetingManager meetingManager = new MeetingManager();
-            List<Meeting> meetings = meetingManager.getMeetings();
+            List<Meeting> meetings = meetingManager.getMeetingList();
 
             RequestDispatcher dispatcher;
             if(!meetings.isEmpty()) {

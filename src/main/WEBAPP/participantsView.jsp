@@ -27,7 +27,7 @@
        --%>
     <tr>
         <td><%=p.getIdMeeting()%></td>
-        <td><%=p.getIdUuser()%></td>
+        <td><%=p.getIdUser()%></td>
 
     </tr>
     <%}%>

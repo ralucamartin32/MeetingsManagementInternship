@@ -1,7 +1,8 @@
 <%@ page import="com.internship.meetingsmanagement.domain.User" %>
 <%@ page import="java.util.ArrayList" %>
 <%@ page import="com.internship.meetingsmanagement.domain.Meeting" %>
-<%@ page import="com.internship.meetingsmanagement.domain.Participant" %><%--
+<%@ page import="com.internship.meetingsmanagement.domain.Participant" %>
+<%@ page import="com.internship.meetingsmanagement.manager.ParticipantManager" %><%--
   Created by IntelliJ IDEA.
   User: raluca.martin
   Date: 4/18/2019
@@ -14,43 +15,50 @@
     <title>Title</title>
 </head>
 <body>
-<table border="1">
-    <tr>
-        <th>User Id</th>
-        <th>First Name</th>
-        <th>Last Name</th>
-        <th>Meeting Id</th>
-        <th>Date</th>
-        <th>Title</th>
-        <th>Location</th>
-        <th>Delete a participant</th>
-    </tr>
-    <%
-        ArrayList<User> usr =
-                (ArrayList<User>)request.getAttribute("users");
-        ArrayList<Meeting> meetings =
-                (ArrayList<Meeting>)request.getAttribute("meetings");
-        ArrayList<Participant> participants =
-                (ArrayList<Participant>)request.getAttribute("participants");
-        for(User u:usr)
-        for(Meeting m :meetings)
-        for(Participant p : participants)
-            if(p.getIdUuser().equals(u.getId()) && p.getIdMeeting().equals(m.getId())){%>
-    <%-- Arranging data in tabular form
-       --%>
-    <tr>
-        <td><%=u.getId()%></td>
-        <td><%=u.getFirstName()%></td>
-        <td><%=u.getLastName()%></td>
-        <td><%=m.getId()%></td>
-        <td><%=m.getDate()%></td>
-        <td><%=m.getTitle()%></td>
-        <td><%=m.getLocation()%></td>
-    </tr>
+<form action="editmeeting" method="post">
+
+    <input type="number" name="id" value=<%=request.getAttribute("meetingId")%>><br/>
+    <input type="datetime-local" name="date" value=<%=request.getAttribute("date")%>><br/>
+    <input type="text" name="title" value=<%=request.getAttribute("title")%>><br/>
+    <input type="text" name="location" value=<%=request.getAttribute("location")%>><br/>
+    <input type="submit" value="Submit" required/>
 
 
-    <%}%>
+    <table border="1">
+        <tr>
+            <th>User Id</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Edit Participants</th>
+        </tr>
+        <%
+            ArrayList<User> usr =
+                    (ArrayList<User>) request.getAttribute("users");
+            ArrayList<Participant> participants =
+                    (ArrayList<Participant>) request.getAttribute("participants");
+            ParticipantManager pm = new ParticipantManager();
+            for (User u : usr) {
+        %>
+        <%-- Arranging data in tabular form
+           --%>
+        <tr>
+            <td><%=u.getId()%>
+            </td>
+            <td><%=u.getFirstName()%>
+            </td>
+            <td><%=u.getLastName()%>
+            </td>
+            <% if (pm.containsUser(u.getId())) { %>
+            <td><input type="checkbox" name="check" value="<%=u.getId() %>" checked="checked"/>
+                    <% } else { %>
+            <td><input type="checkbox" name="check" value="<%=u.getId() %>"/>
+                    <% }   %>
 
-</table>
+        </tr>
+
+
+        <%}%>
+    </table>
+</form>
 </body>
 </html>
