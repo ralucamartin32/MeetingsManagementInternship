@@ -2,12 +2,15 @@ com\internship\meetingsmanagement\domain\Main.class
 com\internship\meetingsmanagement\domain\Participant.class
 com\internship\meetingsmanagement\domain\User.class
 com\internship\meetingsmanagement\servlet\WelcomeServlet.class
+com\internship\meetingsmanagement\DataAccess\UserDAO.class
 com\internship\meetingsmanagement\domain\Meeting.class
 com\internship\meetingsmanagement\manager\UserManager.class
 com\internship\meetingsmanagement\servlet\EditMeeting.class
 com\internship\meetingsmanagement\servlet\GetParticipantsServlet.class
+com\internship\meetingsmanagement\DataAccess\DBConnection.class
 com\internship\meetingsmanagement\servlet\UsersServlet.class
 com\internship\meetingsmanagement\servlet\MeetingsServlet.class
+com\internship\meetingsmanagement\DataAccess\MeetingDAO.class
 com\internship\meetingsmanagement\manager\MeetingManager.class
 com\internship\meetingsmanagement\servlet\CreateMeetingServlet.class
 com\internship\meetingsmanagement\manager\ParticipantManager.class

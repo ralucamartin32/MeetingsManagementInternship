@@ -59,15 +59,16 @@ public class EditMeeting extends HttpServlet {
         List<Participant> participants = participantManager.getParticipantList();
 
         Long meetingId = Long.valueOf(req.getParameter("id"));
-        String[] select =  req.getParameterValues("check");
-        if(select != null) {
-            for(int i = 0; i < select.length; i++){
-                if(!participantManager.containsUser(Long.valueOf(select[i]))) {
+        String[] select = req.getParameterValues("check");
+        if (select != null) {
+            for (int i = 0; i < select.length; i++) {
+                if (!participantManager.containsUser(Long.valueOf(select[i]))) {
                     Participant participant = new Participant(meetingId, Long.valueOf(select[i]));
                     participantManager.addParticipant(participant);
                 }
             }
         }
+
         resp.sendRedirect("welcome.jsp");
     }
 

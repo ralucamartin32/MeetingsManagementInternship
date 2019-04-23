@@ -5,6 +5,7 @@ import com.internship.meetingsmanagement.domain.User;
 
 import javax.servlet.http.Part;
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 public class ParticipantManager {
@@ -42,5 +43,27 @@ public class ParticipantManager {
                 return true;
         }
         return false;
+    }
+
+    public void removeAfterUserId(Long userId) {
+        Iterator<Participant> it = participants.iterator();
+        while(it.hasNext()){
+            Participant p = it.next();
+            if(p.getIdUser().equals(userId)){
+                it.remove();
+
+            }
+
+        }
+
+    }
+    public void removeAfterUserId2(Long userId) {
+        for(Participant p : participants) {
+            if(p.getIdUser().equals(userId)){
+                participants.remove(p);
+            }
+            return;
+        }
+
     }
 }

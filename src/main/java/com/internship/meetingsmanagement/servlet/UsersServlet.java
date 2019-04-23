@@ -1,5 +1,6 @@
 package com.internship.meetingsmanagement.servlet;
 
+import com.internship.meetingsmanagement.DataAccess.UserDAO;
 import com.internship.meetingsmanagement.domain.User;
 import com.internship.meetingsmanagement.manager.UserManager;
 import org.springframework.util.CollectionUtils;
@@ -11,6 +12,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 
 @WebServlet("/userslist")
@@ -23,8 +25,10 @@ public class UsersServlet extends HttpServlet {
 
         try {
 
-            List<User> users = userManager.getUserList();
-
+            //List<User> users = userManager.getUserList();
+            UserDAO userDAO = new UserDAO();
+            List<User> users= new ArrayList<>();
+            users = userDAO.getUsers();
             if (!CollectionUtils.isEmpty(users)) {
                 req.setAttribute("users", users);
                 RequestDispatcher dispatcher = req.getRequestDispatcher("usersView.jsp");

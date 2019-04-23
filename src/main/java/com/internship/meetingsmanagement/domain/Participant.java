@@ -15,4 +15,5 @@ public class Participant {
     private Long idMeeting;
     private Long idUser;
 
+
 }

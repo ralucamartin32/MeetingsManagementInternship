@@ -2,29 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="742b299d-15c7-4f71-93b9-2c13a3000400" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/internship/meetingsmanagement/DataAccess/DBConnection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/internship/meetingsmanagement/DataAccess/MeetingDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/internship/meetingsmanagement/DataAccess/UserDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/WEBAPP/editMeetingsView.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/WEBAPP/editMeetingsView.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/WEBAPP/meetingsView.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/WEBAPP/meetingsView.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/WEBAPP/participantsView.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/WEBAPP/participantsView.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/internship/meetingsmanagement/domain/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/internship/meetingsmanagement/domain/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/internship/meetingsmanagement/domain/Participant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/internship/meetingsmanagement/domain/Participant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/internship/meetingsmanagement/manager/MeetingManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/internship/meetingsmanagement/manager/MeetingManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/internship/meetingsmanagement/manager/ParticipantManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/internship/meetingsmanagement/manager/ParticipantManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/internship/meetingsmanagement/servlet/EditMeeting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/internship/meetingsmanagement/servlet/EditMeeting.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/internship/meetingsmanagement/servlet/MeetingsServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/internship/meetingsmanagement/servlet/MeetingsServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/internship/meetingsmanagement/domain/Participant.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/internship/meetingsmanagement/domain/Participant.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/internship/meetingsmanagement/manager/MeetingManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/internship/meetingsmanagement/manager/MeetingManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/internship/meetingsmanagement/servlet/UsersServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/internship/meetingsmanagement/servlet/UsersServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/internship/meetingsmanagement/domain/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/internship/meetingsmanagement/domain/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/internship/meetingsmanagement/manager/ParticipantManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/internship/meetingsmanagement/manager/ParticipantManager.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/internship/meetingsmanagement/servlet/EditMeeting.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/internship/meetingsmanagement/servlet/EditMeeting.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/internship/meetingsmanagement/servlet/MeetingsServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/internship/meetingsmanagement/servlet/MeetingsServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/internship/meetingsmanagement/servlet/UsersServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/internship/meetingsmanagement/servlet/UsersServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/meetingsmanagement.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/meetingsmanagement.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/meetingsmanagement/WEB-INF/classes/com/internship/meetingsmanagement/domain/Participant.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/meetingsmanagement/WEB-INF/classes/com/internship/meetingsmanagement/domain/Participant.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/meetingsmanagement/WEB-INF/classes/com/internship/meetingsmanagement/manager/MeetingManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/meetingsmanagement/WEB-INF/classes/com/internship/meetingsmanagement/manager/MeetingManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/meetingsmanagement/WEB-INF/classes/com/internship/meetingsmanagement/domain/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/meetingsmanagement/WEB-INF/classes/com/internship/meetingsmanagement/domain/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/meetingsmanagement/WEB-INF/classes/com/internship/meetingsmanagement/manager/ParticipantManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/meetingsmanagement/WEB-INF/classes/com/internship/meetingsmanagement/manager/ParticipantManager.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/meetingsmanagement/WEB-INF/classes/com/internship/meetingsmanagement/servlet/EditMeeting.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/meetingsmanagement/WEB-INF/classes/com/internship/meetingsmanagement/servlet/EditMeeting.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/meetingsmanagement/WEB-INF/classes/com/internship/meetingsmanagement/servlet/MeetingsServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/meetingsmanagement/WEB-INF/classes/com/internship/meetingsmanagement/servlet/MeetingsServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/meetingsmanagement/WEB-INF/classes/com/internship/meetingsmanagement/servlet/UsersServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/meetingsmanagement/WEB-INF/classes/com/internship/meetingsmanagement/servlet/UsersServlet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/meetingsmanagement/editMeetingsView.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/meetingsmanagement/editMeetingsView.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/meetingsmanagement/meetingsView.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/meetingsmanagement/meetingsView.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/meetingsmanagement/participantsView.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/meetingsmanagement/participantsView.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -40,35 +39,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/internship/meetingsmanagement/manager/MeetingManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="32" column="19" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#368#369#0" expanded="true" />
-                <element signature="e#416#417#0" expanded="true" />
-                <element signature="e#463#464#0" expanded="true" />
-                <element signature="e#500#501#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/WEBAPP/meetingsView.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
+            <state relative-caret-position="680">
               <caret line="40" column="28" selection-start-line="40" selection-start-column="28" selection-end-line="40" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/internship/meetingsmanagement/domain/User.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/internship/meetingsmanagement/servlet/MeetingsServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
+            <state relative-caret-position="196">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -77,24 +60,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/internship/meetingsmanagement/manager/UserManager.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/internship/meetingsmanagement/DataAccess/MeetingDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+            <state relative-caret-position="255">
+              <caret line="40" column="94" selection-start-line="40" selection-start-column="94" selection-end-line="40" selection-end-column="94" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#318#319#0" expanded="true" />
-                <element signature="e#363#364#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/internship/meetingsmanagement/servlet/UsersServlet.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/internship/meetingsmanagement/domain/Meeting.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="77">
-              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+            <state relative-caret-position="272">
+              <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -105,22 +86,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/internship/meetingsmanagement/manager/ParticipantManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="383">
-              <caret line="40" column="49" selection-start-line="40" selection-start-column="49" selection-end-line="40" selection-end-column="49" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#414#415#0" expanded="true" />
-                <element signature="e#466#467#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/internship/meetingsmanagement/domain/Participant.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+            <state relative-caret-position="1020">
+              <caret line="64" column="19" selection-start-line="64" selection-start-column="19" selection-end-line="64" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -129,22 +96,26 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/internship/meetingsmanagement/servlet/EditMeeting.java">
+        <entry file="jar://$USER_HOME$/Downloads/OpenJDK11U-jdk_x64_windows_hotspot_11.0.2_9/jdk-11.0.2+9/lib/src.zip!/java.base/java/time/LocalDateTime.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="349">
-              <caret line="67" column="17" selection-start-line="67" selection-start-column="17" selection-end-line="67" selection-end-column="17" />
+            <state relative-caret-position="127">
+              <caret line="475" column="32" selection-start-line="475" selection-start-column="32" selection-end-line="475" selection-end-column="32" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#23083#23084#0" expanded="true" />
+                <element signature="e#23156#23157#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/WEBAPP/editMeetingsView.jsp">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/internship/meetingsmanagement/domain/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="332">
-              <caret line="50" column="46" selection-start-line="50" selection-start-column="46" selection-end-line="50" selection-end-column="46" />
+            <state relative-caret-position="765">
+              <caret line="45" column="68" selection-start-line="45" selection-start-column="68" selection-end-line="45" selection-end-column="81" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -152,8 +123,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/WEBAPP/createMeeting.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="502">
+            <state relative-caret-position="501">
               <caret line="43" column="13" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/internship/meetingsmanagement/servlet/CreateMeetingServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="202">
+              <caret line="49" column="8" selection-start-line="49" selection-start-column="8" selection-end-line="49" selection-end-column="89" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -164,8 +147,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="Class" />
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -176,7 +159,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/resources/log4j2.properties" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/internship/meetingsmanagement/dao/UserDao.java" />
         <option value="$PROJECT_DIR$/src/main/WEBAPP/index.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/internship/meetingsmanagement/com/internship/meetingsmanagement/dao/UserDao.java" />
@@ -197,19 +179,24 @@
         <option value="$PROJECT_DIR$/src/main/WEBAPP/JSP/meetingsView.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/internship/meetingsmanagement/servlet/WelcomeServlet.java" />
         <option value="$PROJECT_DIR$/src/main/WEBAPP/JSP/welcome.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/internship/meetingsmanagement/servlet/UsersServlet.java" />
         <option value="$PROJECT_DIR$/src/main/WEBAPP/createMeeting.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/internship/meetingsmanagement/servlet/CreateMeetingServlet.java" />
         <option value="$PROJECT_DIR$/src/main/WEBAPP/welcome.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/internship/meetingsmanagement/servlet/GetParticipantsServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/internship/meetingsmanagement/domain/Participant.java" />
         <option value="$PROJECT_DIR$/src/main/WEBAPP/participantsView.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/internship/meetingsmanagement/servlet/MeetingsServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/internship/meetingsmanagement/manager/MeetingManager.java" />
         <option value="$PROJECT_DIR$/src/main/WEBAPP/meetingsView.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/internship/meetingsmanagement/servlet/EditMeeting.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/internship/meetingsmanagement/manager/ParticipantManager.java" />
         <option value="$PROJECT_DIR$/src/main/WEBAPP/editMeetingsView.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/internship/meetingsmanagement/domain/Participant.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/internship/meetingsmanagement/manager/ParticipantManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/internship/meetingsmanagement/servlet/EditMeeting.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/internship/meetingsmanagement/DataAccess/DBConnection.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/internship/meetingsmanagement/DataAccess/UserDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/internship/meetingsmanagement/servlet/UsersServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/internship/meetingsmanagement/domain/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/internship/meetingsmanagement/DataAccess/MeetingDAO.java" />
       </list>
     </option>
   </component>
@@ -237,9 +224,9 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="48" />
-    <option name="width" value="879" />
+    <option name="x" value="-9" />
+    <option name="y" value="12" />
+    <option name="width" value="1284" />
     <option name="height" value="820" />
   </component>
   <component name="ProjectView">
@@ -247,6 +234,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -280,6 +268,15 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="meetingsmanagement" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MeetingsManagement" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MeetingsManagementInternship" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="meetingsmanagement" type="462c0819:PsiDirectoryNode" />
+              <item name="DataAccess" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MeetingsManagement" type="b2602c69:ProjectViewProjectNode" />
@@ -326,7 +323,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -361,7 +357,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Remote.Debug">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.internship.meetingsmanagement.domain.Main" />
+      <module name="MeetingsManagement" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.internship.meetingsmanagement.domain.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="meetingsmanagement [package]" type="MavenRunConfiguration" factoryName="Maven" temporary="true">
       <MavenSettings>
         <option name="myGeneralSettings" />
@@ -404,9 +413,11 @@
     <list>
       <item itemvalue="Maven.meetingsmanagement [package]" />
       <item itemvalue="Remote.Debug" />
+      <item itemvalue="Application.Main" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Maven.meetingsmanagement [package]" />
       </list>
     </recent_temporary>
@@ -428,11 +439,12 @@
       <workItem from="1555566594067" duration="28829000" />
       <workItem from="1555659915434" duration="12183000" />
       <workItem from="1555918483335" duration="11805000" />
+      <workItem from="1556010006419" duration="16778000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="79307000" />
+    <option name="totallyTimeSpent" value="96085000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -446,7 +458,7 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18059126" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18251929" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -456,7 +468,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32916668" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.25972223" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.43472221" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.041666668" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -537,13 +549,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/internship/meetingsmanagement/dao/UserDao.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/internship/meetingsmanagement/com/internship/meetingsmanagement/dao/UserDau.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/internship/meetingsmanagement/com/internship/meetingsmanagement/dao/UserDao.java" />
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-122">
-          <caret line="38" selection-start-line="38" selection-end-line="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar!/javax/servlet/ServletRequest.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="310">
@@ -566,27 +571,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/internship/meetingsmanagement/domain/UserDao.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/internship/meetingsmanagement/domain/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-17">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/Downloads/OpenJDK11U-jdk_x64_windows_hotspot_11.0.2_9/jdk-11.0.2+9/lib/src.zip!/java.base/java/time/LocalDateTime.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="475" column="32" selection-start-line="475" selection-start-column="32" selection-end-line="475" selection-end-column="32" />
-          <folding>
-            <element signature="e#23083#23084#0" expanded="true" />
-            <element signature="e#23156#23157#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/WEBAPP/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -618,13 +602,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/Downloads/OpenJDK11U-jdk_x64_windows_hotspot_11.0.2_9/jdk-11.0.2+9/lib/src.zip!/java.base/java/util/List.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="171" column="12" selection-start-line="171" selection-start-column="12" selection-end-line="171" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/Downloads/OpenJDK11U-jdk_x64_windows_hotspot_11.0.2_9/jdk-11.0.2+9/lib/src.zip!/java.base/java/util/Collection.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -649,16 +626,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/internship/meetingsmanagement/domain/Meeting.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/WEBAPP/usersView.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="519">
@@ -679,40 +646,66 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/internship/meetingsmanagement/servlet/MeetingsServlet.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/internship/meetingsmanagement/manager/UserManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        <state relative-caret-position="204">
+          <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#318#319#0" expanded="true" />
+            <element signature="e#363#364#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Downloads/OpenJDK11U-jdk_x64_windows_hotspot_11.0.2_9/jdk-11.0.2+9/lib/src.zip!/java.base/java/util/List.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="287" column="12" selection-start-line="287" selection-start-column="12" selection-end-line="287" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/WEBAPP/editMeetingsView.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-263">
+          <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/internship/meetingsmanagement/servlet/EditMeeting.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="70" selection-start-line="70" selection-end-line="70" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/internship/meetingsmanagement/servlet/CreateMeetingServlet.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/internship/meetingsmanagement/domain/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="48" column="8" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="69" />
+        <state relative-caret-position="221">
+          <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/WEBAPP/createMeeting.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="502">
-          <caret line="43" column="13" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/internship/meetingsmanagement/domain/Participant.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+        <state relative-caret-position="289">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="451">
+          <caret line="79" selection-start-line="79" selection-end-line="79" />
         </state>
       </provider>
     </entry>
@@ -730,42 +723,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/internship/meetingsmanagement/manager/UserManager.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/internship/meetingsmanagement/DataAccess/DBConnection.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+        <state relative-caret-position="170">
+          <caret line="28" column="9" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#318#319#0" expanded="true" />
-            <element signature="e#363#364#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/internship/meetingsmanagement/servlet/UsersServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="77">
-          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+        <state relative-caret-position="71">
+          <caret line="29" column="28" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/internship/meetingsmanagement/domain/User.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/internship/meetingsmanagement/DataAccess/UserDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
+        <state relative-caret-position="47">
+          <caret line="19" selection-start-line="19" selection-end-line="33" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/internship/meetingsmanagement/servlet/EditMeeting.java">
+    <entry file="jar://$USER_HOME$/Downloads/OpenJDK11U-jdk_x64_windows_hotspot_11.0.2_9/jdk-11.0.2+9/lib/src.zip!/java.base/java/time/LocalDateTime.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="67" column="17" selection-start-line="67" selection-start-column="17" selection-end-line="67" selection-end-column="17" />
+        <state relative-caret-position="127">
+          <caret line="475" column="32" selection-start-line="475" selection-start-column="32" selection-end-line="475" selection-end-column="32" />
+          <folding>
+            <element signature="e#23083#23084#0" expanded="true" />
+            <element signature="e#23156#23157#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/internship/meetingsmanagement/domain/Meeting.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -774,27 +776,72 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/WEBAPP/meetingsView.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
+        <state relative-caret-position="680">
           <caret line="40" column="28" selection-start-line="40" selection-start-column="28" selection-end-line="40" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/WEBAPP/createMeeting.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="501">
+          <caret line="43" column="13" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/internship/meetingsmanagement/servlet/CreateMeetingServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="49" column="8" selection-start-line="49" selection-start-column="8" selection-end-line="49" selection-end-column="89" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/internship/meetingsmanagement/manager/ParticipantManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="40" column="49" selection-start-line="40" selection-start-column="49" selection-end-line="40" selection-end-column="49" />
+        <state relative-caret-position="1020">
+          <caret line="64" column="19" selection-start-line="64" selection-start-column="19" selection-end-line="64" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#414#415#0" expanded="true" />
-            <element signature="e#466#467#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/WEBAPP/editMeetingsView.jsp">
+    <entry file="jar://$USER_HOME$/Downloads/OpenJDK11U-jdk_x64_windows_hotspot_11.0.2_9/jdk-11.0.2+9/lib/src.zip!/java.base/java/time/format/DateTimeFormatter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="50" column="46" selection-start-line="50" selection-start-column="46" selection-end-line="50" selection-end-column="46" />
+        <state relative-caret-position="17">
+          <caret line="2045" selection-start-line="2045" selection-end-line="2045" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/internship/meetingsmanagement/DataAccess/MeetingDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="40" column="94" selection-start-line="40" selection-start-column="94" selection-end-line="40" selection-end-column="94" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/internship/meetingsmanagement/domain/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="45" column="68" selection-start-line="45" selection-start-column="68" selection-end-line="45" selection-end-column="81" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/internship/meetingsmanagement/servlet/MeetingsServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

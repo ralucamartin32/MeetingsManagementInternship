@@ -48,7 +48,7 @@
             </td>
             <td><%=u.getLastName()%>
             </td>
-            <% if (pm.containsUser(u.getId())) { %>
+            <% if (pm.containsUser(u.getId()) ) { %>
             <td><input type="checkbox" name="check" value="<%=u.getId() %>" checked="checked"/>
                     <% } else { %>
             <td><input type="checkbox" name="check" value="<%=u.getId() %>"/>
