@@ -1,5 +1,8 @@
 package com.internship.meetingsmanagement.servlet;
 
+import com.internship.meetingsmanagement.DataAccess.MeetingDAO;
+import com.internship.meetingsmanagement.DataAccess.ParticipantDAO;
+import com.internship.meetingsmanagement.DataAccess.UserDAO;
 import com.internship.meetingsmanagement.domain.Meeting;
 import com.internship.meetingsmanagement.domain.Participant;
 import com.internship.meetingsmanagement.domain.User;
@@ -25,13 +28,12 @@ public class CreateMeetingServlet extends HttpServlet {
     private UserManager userManager = new UserManager();
     MeetingManager meetingManager = new MeetingManager();
     private ParticipantManager participantManager = new ParticipantManager();
-
+    private UserDAO userDAO = new UserDAO();
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         try {
 
-            List<User> users = userManager.getUserList();
-
+            List<User> users = userDAO.getUsers();
             if (!CollectionUtils.isEmpty(users)) {
                 req.setAttribute("users", users);
                 RequestDispatcher dispatcher = req.getRequestDispatcher("createMeeting.jsp");
@@ -51,19 +53,25 @@ public class CreateMeetingServlet extends HttpServlet {
         String meetingTitle = req.getParameter("meetingTitle");
         String meetingLocation = req.getParameter("meetingLocation");
 
-        String[] select =  req.getParameterValues("check");
-        if(select != null) {
-            for(int i = 0; i < select.length; i++){
-                Participant participant = new Participant(meetingId, Long.valueOf(select[i]));
-                participantManager.addParticipant(participant);
-            }
-        }
+        ParticipantDAO participantDAO = new ParticipantDAO();
+        String[] select = req.getParameterValues("check");
+
         try {
             Meeting meeting = new Meeting(meetingId, meetingDate, meetingTitle, meetingLocation);
-            meetingManager.addMeeting(meeting);
-            resp.sendRedirect("welcome.jsp");
+            MeetingDAO meetingDAO = new MeetingDAO();
+            meetingDAO.addMeeting(meeting);
+
         } catch (Exception e) {
             e.printStackTrace();
         }
+
+        if (select != null) {
+            for (int i = 0; i < select.length; i++) {
+                Participant participant = new Participant(meetingId, Long.valueOf(select[i]));
+                participantDAO.addParticipant(participant);
+            }
+        }
+
+        resp.sendRedirect("welcome.jsp");
     }
 }

@@ -1,5 +1,6 @@
 package com.internship.meetingsmanagement.servlet;
 
+import com.internship.meetingsmanagement.DataAccess.MeetingDAO;
 import com.internship.meetingsmanagement.domain.Meeting;
 import com.internship.meetingsmanagement.manager.MeetingManager;
 
@@ -19,8 +20,8 @@ public class MeetingsServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         try {
 
-            MeetingManager meetingManager = new MeetingManager();
-            List<Meeting> meetings = meetingManager.getMeetingList();
+            MeetingDAO meetingDAO = new MeetingDAO();
+            List<Meeting> meetings = meetingDAO.getMettings();
 
             RequestDispatcher dispatcher;
             if(!meetings.isEmpty()) {

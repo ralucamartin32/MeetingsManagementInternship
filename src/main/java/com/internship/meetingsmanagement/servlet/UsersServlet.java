@@ -25,10 +25,8 @@ public class UsersServlet extends HttpServlet {
 
         try {
 
-            //List<User> users = userManager.getUserList();
             UserDAO userDAO = new UserDAO();
-            List<User> users= new ArrayList<>();
-            users = userDAO.getUsers();
+            List<User> users= userDAO.getUsers();
             if (!CollectionUtils.isEmpty(users)) {
                 req.setAttribute("users", users);
                 RequestDispatcher dispatcher = req.getRequestDispatcher("usersView.jsp");

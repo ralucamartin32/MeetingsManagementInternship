@@ -1,5 +1,7 @@
 package com.internship.meetingsmanagement.servlet;
 
+import com.internship.meetingsmanagement.DataAccess.ParticipantDAO;
+import com.internship.meetingsmanagement.DataAccess.UserDAO;
 import com.internship.meetingsmanagement.domain.Meeting;
 import com.internship.meetingsmanagement.domain.Participant;
 import com.internship.meetingsmanagement.domain.User;
@@ -41,8 +43,10 @@ public class EditMeeting extends HttpServlet {
 //            dispatcher.forward(req, resp);
         }
 
-        List<User> users = userManager.getUserList();
-        List<Participant> participants = participantManager.getParticipantList();
+        UserDAO userDAO = new UserDAO();
+        List<User> users = userDAO.getUsers();
+        ParticipantDAO participantDAO = new ParticipantDAO();
+        List<Participant> participants = participantDAO.getParticipants();
 
         if (!CollectionUtils.isEmpty(users) && !CollectionUtils.isEmpty(participants) ) {
             req.setAttribute("users", users);

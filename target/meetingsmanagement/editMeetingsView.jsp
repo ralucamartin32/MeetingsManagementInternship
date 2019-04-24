@@ -2,7 +2,8 @@
 <%@ page import="java.util.ArrayList" %>
 <%@ page import="com.internship.meetingsmanagement.domain.Meeting" %>
 <%@ page import="com.internship.meetingsmanagement.domain.Participant" %>
-<%@ page import="com.internship.meetingsmanagement.manager.ParticipantManager" %><%--
+<%@ page import="com.internship.meetingsmanagement.manager.ParticipantManager" %>
+<%@ page import="com.internship.meetingsmanagement.DataAccess.ParticipantDAO" %><%--
   Created by IntelliJ IDEA.
   User: raluca.martin
   Date: 4/18/2019
@@ -36,7 +37,8 @@
                     (ArrayList<User>) request.getAttribute("users");
             ArrayList<Participant> participants =
                     (ArrayList<Participant>) request.getAttribute("participants");
-            ParticipantManager pm = new ParticipantManager();
+            ParticipantDAO participantDAO = new ParticipantDAO();
+            Long meetingId = (Long) request.getAttribute("meetingId");
             for (User u : usr) {
         %>
         <%-- Arranging data in tabular form
@@ -48,7 +50,7 @@
             </td>
             <td><%=u.getLastName()%>
             </td>
-            <% if (pm.containsUser(u.getId()) ) { %>
+            <% if (participantDAO.participantByMeetingId(meetingId, u.getId())) { %>
             <td><input type="checkbox" name="check" value="<%=u.getId() %>" checked="checked"/>
                     <% } else { %>
             <td><input type="checkbox" name="check" value="<%=u.getId() %>"/>

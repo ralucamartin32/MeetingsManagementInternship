@@ -6,11 +6,12 @@ C:\Users\raluca.martin\Internship\MeetingsManagementInternship\src\main\java\com
 C:\Users\raluca.martin\Internship\MeetingsManagementInternship\src\main\java\com\internship\meetingsmanagement\domain\Main.java
 C:\Users\raluca.martin\Internship\MeetingsManagementInternship\src\main\java\com\internship\meetingsmanagement\DataAccess\UserDAO.java
 C:\Users\raluca.martin\Internship\MeetingsManagementInternship\src\main\java\com\internship\meetingsmanagement\domain\User.java
+C:\Users\raluca.martin\Internship\MeetingsManagementInternship\src\main\java\com\internship\meetingsmanagement\DataAccess\ParticipantDAO.java
 C:\Users\raluca.martin\Internship\MeetingsManagementInternship\src\main\java\com\internship\meetingsmanagement\domain\Meeting.java
 C:\Users\raluca.martin\Internship\MeetingsManagementInternship\src\main\java\com\internship\meetingsmanagement\domain\Participant.java
 C:\Users\raluca.martin\Internship\MeetingsManagementInternship\src\main\java\com\internship\meetingsmanagement\servlet\CreateMeetingServlet.java
+C:\Users\raluca.martin\Internship\MeetingsManagementInternship\src\main\java\com\internship\meetingsmanagement\DataAccess\DataSource.java
 C:\Users\raluca.martin\Internship\MeetingsManagementInternship\src\main\java\com\internship\meetingsmanagement\servlet\EditMeeting.java
-C:\Users\raluca.martin\Internship\MeetingsManagementInternship\src\main\java\com\internship\meetingsmanagement\DataAccess\DBConnection.java
 C:\Users\raluca.martin\Internship\MeetingsManagementInternship\src\main\java\com\internship\meetingsmanagement\manager\ParticipantManager.java
 C:\Users\raluca.martin\Internship\MeetingsManagementInternship\src\main\java\com\internship\meetingsmanagement\servlet\UsersServlet.java
 C:\Users\raluca.martin\Internship\MeetingsManagementInternship\src\main\java\com\internship\meetingsmanagement\servlet\WelcomeServlet.java

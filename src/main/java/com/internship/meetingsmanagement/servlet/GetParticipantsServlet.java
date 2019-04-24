@@ -1,5 +1,6 @@
 package com.internship.meetingsmanagement.servlet;
 
+import com.internship.meetingsmanagement.DataAccess.ParticipantDAO;
 import com.internship.meetingsmanagement.domain.Meeting;
 import com.internship.meetingsmanagement.domain.Participant;
 import com.internship.meetingsmanagement.manager.MeetingManager;
@@ -18,10 +19,12 @@ import java.util.List;
 @WebServlet("/participantslist")
 public class GetParticipantsServlet extends HttpServlet {
 
+    private ParticipantDAO participantDAO = new ParticipantDAO();
+
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        ParticipantManager participantManager = new ParticipantManager();
-        List<Participant> participants = participantManager.getParticipantList();
+
+        List<Participant> participants = participantDAO.getParticipants();
 
         RequestDispatcher dispatcher;
         if (!participants.isEmpty()) {

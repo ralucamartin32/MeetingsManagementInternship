@@ -1,3 +1,4 @@
+com\internship\meetingsmanagement\DataAccess\DataSource.class
 com\internship\meetingsmanagement\domain\Main.class
 com\internship\meetingsmanagement\domain\Participant.class
 com\internship\meetingsmanagement\domain\User.class
@@ -7,7 +8,7 @@ com\internship\meetingsmanagement\domain\Meeting.class
 com\internship\meetingsmanagement\manager\UserManager.class
 com\internship\meetingsmanagement\servlet\EditMeeting.class
 com\internship\meetingsmanagement\servlet\GetParticipantsServlet.class
-com\internship\meetingsmanagement\DataAccess\DBConnection.class
+com\internship\meetingsmanagement\DataAccess\ParticipantDAO.class
 com\internship\meetingsmanagement\servlet\UsersServlet.class
 com\internship\meetingsmanagement\servlet\MeetingsServlet.class
 com\internship\meetingsmanagement\DataAccess\MeetingDAO.class
