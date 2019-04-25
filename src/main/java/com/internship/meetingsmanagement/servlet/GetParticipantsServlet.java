@@ -1,10 +1,7 @@
 package com.internship.meetingsmanagement.servlet;
 
 import com.internship.meetingsmanagement.DataAccess.ParticipantDAO;
-import com.internship.meetingsmanagement.domain.Meeting;
 import com.internship.meetingsmanagement.domain.Participant;
-import com.internship.meetingsmanagement.manager.MeetingManager;
-import com.internship.meetingsmanagement.manager.ParticipantManager;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -12,7 +9,6 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.Part;
 import java.io.IOException;
 import java.util.List;
 

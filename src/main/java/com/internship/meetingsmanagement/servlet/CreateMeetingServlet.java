@@ -17,7 +17,6 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.Part;
 import java.io.IOException;
 import java.time.LocalDateTime;
 import java.util.List;
@@ -53,7 +52,7 @@ public class CreateMeetingServlet extends HttpServlet {
         String meetingTitle = req.getParameter("meetingTitle");
         String meetingLocation = req.getParameter("meetingLocation");
 
-        ParticipantDAO participantDAO = new ParticipantDAO();
+
         String[] select = req.getParameterValues("check");
 
         try {
@@ -64,7 +63,7 @@ public class CreateMeetingServlet extends HttpServlet {
         } catch (Exception e) {
             e.printStackTrace();
         }
-
+        ParticipantDAO participantDAO = new ParticipantDAO();
         if (select != null) {
             for (int i = 0; i < select.length; i++) {
                 Participant participant = new Participant(meetingId, Long.valueOf(select[i]));

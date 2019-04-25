@@ -17,9 +17,10 @@ public class UserDAO {
     public List<User> getUsers() {
 
         List<User> users = new ArrayList<>();
-
+        Connection con = null;
         try {
-            Connection con = DataSource.getConnection();
+
+            con = DataSource.getConnection();
             stmt = con.createStatement();
             String sql = "Select * FROM users";
             ResultSet rs = stmt.executeQuery(sql);
@@ -30,9 +31,21 @@ public class UserDAO {
                 user.setLastName(rs.getString("last_name"));
                 users.add(user);
             }
+            rs.close();
+            stmt.close();
+            con.close();
 
         } catch (SQLException se) {
             se.printStackTrace();
+        }
+        finally {
+            try{
+                if(con != null) {
+                    con.close();
+                }
+            }catch (SQLException e){
+                e.printStackTrace();
+            }
         }
         return users;
     }

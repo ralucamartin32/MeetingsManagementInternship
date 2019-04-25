@@ -50,7 +50,7 @@
             </td>
             <td><%=u.getLastName()%>
             </td>
-            <% if (participantDAO.participantByMeetingId(meetingId, u.getId())) { %>
+            <% if (participantDAO.participantByMeetingIdExists(meetingId, u.getId())) { %>
             <td><input type="checkbox" name="check" value="<%=u.getId() %>" checked="checked"/>
                     <% } else { %>
             <td><input type="checkbox" name="check" value="<%=u.getId() %>"/>
